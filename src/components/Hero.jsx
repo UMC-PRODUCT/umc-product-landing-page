@@ -267,18 +267,15 @@ const Hero = () => {
           운영 업무는 우리가 관리합니다.
         </Subtitle>
 
-        {/* Temporarily hidden as per request
         <ButtonGroup
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <motion.a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              alert('2월 20일 공개 됩니다.');
-            }}
+            href="https://play.google.com/store/apps/details?id=com.umc.product"
+            target="_blank"
+            rel="noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -286,18 +283,15 @@ const Hero = () => {
           </motion.a>
 
           <motion.a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              alert('2월 20일 공개 됩니다.');
-            }}
+            href="https://apps.apple.com/kr/app/umc/id6759412446"
+            target="_blank"
+            rel="noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <StoreButtonImage src={appStoreBadge} alt="Download on the App Store" />
           </motion.a>
         </ButtonGroup>
-        */}
       </Content>
 
       <ScrollIndicator
